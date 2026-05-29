@@ -1,0 +1,42 @@
+## Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.pyd
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+
+## Virtual environments
+.venv/
+.venv_win/
+.conda_env/
+venv/
+env/
+
+## Local configuration
+.env
+.env.*
+!.env.example
+
+## Logs
+logs/*.log
+logs/**/*.log
+!logs/.gitkeep
+
+## Notebook checkpoints
+.ipynb_checkpoints/
+
+## Generated ETL artifacts
+data/bronze/*.parquet
+data/silver/*.parquet
+data/gold/*.parquet
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+
+## OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
